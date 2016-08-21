@@ -12,10 +12,10 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    fileprivate var appCoordinator: AppCoordinator!
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        showMainInterface()
         return true
     }
 
@@ -40,7 +40,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-
-
 }
 
+private extension AppDelegate {
+    
+    func showMainInterface() {
+        window = UIWindow(frame: UIScreen.main.bounds)
+        let rootViewController = UINavigationController()
+        window?.rootViewController = rootViewController
+        appCoordinator = AppCoordinator(navigationController: rootViewController)
+        appCoordinator.start()
+        window?.makeKeyAndVisible()
+    }
+}

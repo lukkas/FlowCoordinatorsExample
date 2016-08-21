@@ -1,0 +1,8 @@
+// Build settings for ad-hoc and app store builds.
+
+#include "Release.xcconfig"
+#include "type.xcconfig"
+
+//CODE_SIGN_IDENTITY = iPhone Distribution: AppUnite Sp. z o.o.
+
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) STAGING=0

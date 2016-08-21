@@ -1,0 +1,10 @@
+//
+//  wowcher-Staging-Debug.xcconfig
+//  wowcher
+//
+//  Created by Łukasz Kasperek on 12.01.2016.
+//  Copyright © 2016 Flipside Group. All rights reserved.
+//
+
+#include "Debug.xcconfig"
+#include "type-Staging.xcconfig"

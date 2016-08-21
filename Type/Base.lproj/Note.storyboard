@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11198.2" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Note View Controller-->
+        <scene sceneID="OMf-Mh-u3b">
+            <objects>
+                <viewController storyboardIdentifier="NoteViewController" id="IbA-Xy-0OO" customClass="NoteViewController" customModule="Type" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Cuv-zp-UzV"/>
+                        <viewControllerLayoutGuide type="bottom" id="QGT-Xp-dVE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ZKf-Zh-1ng">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ov6-Qf-Ddf" customClass="TypeTextView" customModule="Type" customModuleProvider="target">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Oqo-aU-MLA">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="96" id="uXG-2g-Qhs"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="CEo-WB-vat">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="jIf-Kn-bBD">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="ov6-Qf-Ddf" secondAttribute="trailing" id="5hN-pY-a7k"/>
+                            <constraint firstItem="Oqo-aU-MLA" firstAttribute="leading" secondItem="ZKf-Zh-1ng" secondAttribute="leading" id="ITR-8H-dLR"/>
+                            <constraint firstAttribute="trailing" secondItem="Oqo-aU-MLA" secondAttribute="trailing" id="TdO-Yg-fYK"/>
+                            <constraint firstItem="QGT-Xp-dVE" firstAttribute="top" secondItem="Oqo-aU-MLA" secondAttribute="bottom" id="ZOh-hg-EqB"/>
+                            <constraint firstItem="ov6-Qf-Ddf" firstAttribute="leading" secondItem="ZKf-Zh-1ng" secondAttribute="leading" id="bqY-p4-25n"/>
+                            <constraint firstItem="ov6-Qf-Ddf" firstAttribute="top" secondItem="Cuv-zp-UzV" secondAttribute="bottom" constant="-20" id="lyI-8m-ObR"/>
+                            <constraint firstItem="Oqo-aU-MLA" firstAttribute="top" secondItem="ov6-Qf-Ddf" secondAttribute="bottom" id="t59-rI-QpT"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="Oqo-aU-MLA" id="Rv7-EX-cbh"/>
+                        <outlet property="textView" destination="ov6-Qf-Ddf" id="ue5-66-JlC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7gs-9E-zmb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-239.19999999999999" y="10.344827586206897"/>
+        </scene>
+    </scenes>
+</document>

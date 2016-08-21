@@ -1,0 +1,7 @@
+// Build settings for testing builds.
+
+#include "Test.xcconfig"
+#include "type.xcconfig"
+
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) STAGING=0
+

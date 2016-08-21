@@ -1,0 +1,16 @@
+//
+//  wowcher-Staging-Test.xcconfig
+//  wowcher
+//
+//  Created by Łukasz Kasperek on 12.01.2016.
+//  Copyright © 2016 Flipside Group. All rights reserved.
+//
+
+#include "Test.xcconfig"
+#include "type-Staging.xcconfig"
+
+// Instrument for code coverage:
+GCC_GENERATE_TEST_COVERAGE_FILES = YES
+GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES
+
+ENABLE_TESTABILITY = YES

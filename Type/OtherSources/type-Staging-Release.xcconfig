@@ -1,0 +1,12 @@
+//
+//  wowcher-Staging-Release.xcconfig
+//  wowcher
+//
+//  Created by Łukasz Kasperek on 12.01.2016.
+//  Copyright © 2016 Flipside Group. All rights reserved.
+//
+
+#include "Release.xcconfig"
+#include "type-Staging.xcconfig"
+
+//CODE_SIGN_IDENTITY = iPhone Distribution: AppUnite Sp. z o.o.

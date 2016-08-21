@@ -1,0 +1,12 @@
+//
+//  shoutit-Staging.xcconfig
+//  shoutit-iphone
+//
+//  Created by Łukasz Kasperek on 10.02.2016.
+//  Copyright © 2016 Shoutit. All rights reserved.
+//
+
+#include "type.xcconfig"
+
+OTHER_SWIFT_FLAGS = $(inherited) "-D" "STAGING"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) STAGING=1

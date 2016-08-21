@@ -1,0 +1,7 @@
+// Build settings for debug builds.
+
+#include "Debug.xcconfig"
+#include "type.xcconfig"
+
+//OTHER_SWIFT_FLAGS = $(inherited) "-D"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) STAGING=0

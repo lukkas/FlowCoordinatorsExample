@@ -1,0 +1,15 @@
+//
+//  Test.xcconfig
+//  Type
+//
+//  Created by Łukasz Kasperek on 21.08.2016.
+//  Copyright © 2016 Lukasz Kasperek. All rights reserved.
+//
+
+#include "Common.xcconfig"
+
+// Instrument for code coverage:
+GCC_GENERATE_TEST_COVERAGE_FILES = YES
+GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES
+
+ENABLE_TESTABILITY = YES
