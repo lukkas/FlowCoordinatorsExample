@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B217B78A1D71D9320098C232 /* NotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B217B7891D71D9320098C232 /* NotesViewController.swift */; };
+		B217B78D1D71D94F0098C232 /* NotesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B217B78C1D71D94F0098C232 /* NotesViewModel.swift */; };
+		B217B7901D71D9C80098C232 /* NotesDisplayable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B217B78F1D71D9C80098C232 /* NotesDisplayable.swift */; };
+		B217B7921D71DA270098C232 /* UnwindHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = B217B7911D71DA270098C232 /* UnwindHandler.swift */; };
+		B217B7941D71DAC30098C232 /* Injectable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B217B7931D71DAC30098C232 /* Injectable.swift */; };
+		B217B7971D71DB8A0098C232 /* FlowCoordinatorDependencySet.swift in Sources */ = {isa = PBXBuildFile; fileRef = B217B7961D71DB8A0098C232 /* FlowCoordinatorDependencySet.swift */; };
+		B217B79A1D71DD280098C232 /* Notes.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B217B7981D71DD280098C232 /* Notes.storyboard */; };
 		B26585DE1D691CF500CCEF6D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B26585DD1D691CF500CCEF6D /* AppDelegate.swift */; };
 		B26585E51D691CF500CCEF6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B26585E41D691CF500CCEF6D /* Assets.xcassets */; };
 		B26585E81D691CF500CCEF6D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B26585E61D691CF500CCEF6D /* LaunchScreen.storyboard */; };
@@ -30,6 +37,7 @@
 		B2D302FC1D69F4B4008CA025 /* type-Test.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = B2D302F31D69F4B4008CA025 /* type-Test.xcconfig */; };
 		B2D303001D69F6C0008CA025 /* Debug.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = B2D302FE1D69F6C0008CA025 /* Debug.xcconfig */; };
 		B2D303011D69F6C0008CA025 /* Release.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = B2D302FF1D69F6C0008CA025 /* Release.xcconfig */; };
+		B2D303161D69FE8A008CA025 /* UIViewController+Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = B2D303151D69FE8A008CA025 /* UIViewController+Keyboard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +58,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B217B7891D71D9320098C232 /* NotesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NotesViewController.swift; path = Controllers/NotesViewController.swift; sourceTree = "<group>"; };
+		B217B78C1D71D94F0098C232 /* NotesViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NotesViewModel.swift; path = ViewModels/NotesViewModel.swift; sourceTree = "<group>"; };
+		B217B78F1D71D9C80098C232 /* NotesDisplayable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NotesDisplayable.swift; path = FlowCoordination/NotesDisplayable.swift; sourceTree = "<group>"; };
+		B217B7911D71DA270098C232 /* UnwindHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UnwindHandler.swift; path = FlowCoordination/UnwindHandler.swift; sourceTree = "<group>"; };
+		B217B7931D71DAC30098C232 /* Injectable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Injectable.swift; path = FlowCoordination/Injectable.swift; sourceTree = "<group>"; };
+		B217B7961D71DB8A0098C232 /* FlowCoordinatorDependencySet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FlowCoordinatorDependencySet.swift; path = FlowCoordination/FlowCoordinatorDependencySet.swift; sourceTree = "<group>"; };
+		B217B7991D71DD280098C232 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Notes.storyboard; sourceTree = "<group>"; };
 		B26585DA1D691CF500CCEF6D /* Type.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Type.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B26585DD1D691CF500CCEF6D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B26585E41D691CF500CCEF6D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -81,6 +96,7 @@
 		B2D302FE1D69F6C0008CA025 /* Debug.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Debug.xcconfig; path = OtherSources/Debug.xcconfig; sourceTree = "<group>"; };
 		B2D302FF1D69F6C0008CA025 /* Release.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = Release.xcconfig; path = OtherSources/Release.xcconfig; sourceTree = "<group>"; };
 		B2D303021D69F75B008CA025 /* Test.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Test.xcconfig; path = OtherSources/Test.xcconfig; sourceTree = "<group>"; };
+		B2D303151D69FE8A008CA025 /* UIViewController+Keyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIViewController+Keyboard.swift"; path = "Extensions/UIViewController+Keyboard.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +124,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B217B7881D71D91A0098C232 /* Notes */ = {
+			isa = PBXGroup;
+			children = (
+				B217B7891D71D9320098C232 /* NotesViewController.swift */,
+				B217B78B1D71D9390098C232 /* ViewModel */,
+			);
+			name = Notes;
+			sourceTree = "<group>";
+		};
+		B217B78B1D71D9390098C232 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B217B78C1D71D94F0098C232 /* NotesViewModel.swift */,
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		B217B78E1D71D99F0098C232 /* FlowCoordinatorComponents */ = {
+			isa = PBXGroup;
+			children = (
+				B217B78F1D71D9C80098C232 /* NotesDisplayable.swift */,
+				B217B7911D71DA270098C232 /* UnwindHandler.swift */,
+				B217B7931D71DAC30098C232 /* Injectable.swift */,
+			);
+			name = FlowCoordinatorComponents;
+			sourceTree = "<group>";
+		};
+		B217B7951D71DB470098C232 /* DependencyInjection */ = {
+			isa = PBXGroup;
+			children = (
+				B217B7961D71DB8A0098C232 /* FlowCoordinatorDependencySet.swift */,
+			);
+			name = DependencyInjection;
+			sourceTree = "<group>";
+		};
 		B26585D11D691CF500CCEF6D = {
 			isa = PBXGroup;
 			children = (
@@ -133,6 +184,7 @@
 			isa = PBXGroup;
 			children = (
 				B265860B1D691D3B00CCEF6D /* Application */,
+				B2D303131D69FE59008CA025 /* Extensions */,
 				B265860C1D691D4100CCEF6D /* FlowCoordination */,
 				B265860D1D691D4B00CCEF6D /* Controllers */,
 				B26586191D6923D200CCEF6D /* Views */,
@@ -173,8 +225,10 @@
 			isa = PBXGroup;
 			children = (
 				B26586101D691E0400CCEF6D /* FlowCoordinator.swift */,
+				B217B7951D71DB470098C232 /* DependencyInjection */,
 				B26586121D691EAE00CCEF6D /* AppCoordinator */,
 				B26586131D691EB800CCEF6D /* FlowCoordinators */,
+				B217B78E1D71D99F0098C232 /* FlowCoordinatorComponents */,
 				B26586241D69251900CCEF6D /* ViewControllerFactory */,
 			);
 			name = FlowCoordination;
@@ -184,6 +238,7 @@
 			isa = PBXGroup;
 			children = (
 				B265861C1D69243F00CCEF6D /* Note */,
+				B217B7881D71D91A0098C232 /* Notes */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -193,6 +248,7 @@
 			children = (
 				B26585E61D691CF500CCEF6D /* LaunchScreen.storyboard */,
 				B26586161D6922F900CCEF6D /* Note.storyboard */,
+				B217B7981D71DD280098C232 /* Notes.storyboard */,
 			);
 			name = InterfaceBuilder;
 			sourceTree = "<group>";
@@ -274,6 +330,22 @@
 			path = Type;
 			sourceTree = "<group>";
 		};
+		B2D303131D69FE59008CA025 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B2D303141D69FE67008CA025 /* UIKit */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		B2D303141D69FE67008CA025 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				B2D303151D69FE8A008CA025 /* UIViewController+Keyboard.swift */,
+			);
+			name = UIKit;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -281,12 +353,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B26586021D691CF500CCEF6D /* Build configuration list for PBXNativeTarget "Type" */;
 			buildPhases = (
-				4BE5EFD3AC089952BCD379D2 /* [CP] Check Pods Manifest.lock */,
 				B26585D61D691CF500CCEF6D /* Sources */,
 				B26585D71D691CF500CCEF6D /* Frameworks */,
 				B26585D81D691CF500CCEF6D /* Resources */,
-				4F76E9F348C859B3A240E5AF /* [CP] Embed Pods Frameworks */,
-				3205D44BD19B3531C22A8682 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -397,6 +466,7 @@
 				B2D302F41D69F4B4008CA025 /* type-Staging-Release.xcconfig in Resources */,
 				B2D302FB1D69F4B4008CA025 /* type-Staging.xcconfig in Resources */,
 				B2D302F61D69F4B4008CA025 /* type-Release.xcconfig in Resources */,
+				B217B79A1D71DD280098C232 /* Notes.storyboard in Resources */,
 				B2D302FC1D69F4B4008CA025 /* type-Test.xcconfig in Resources */,
 				B2D303001D69F6C0008CA025 /* Debug.xcconfig in Resources */,
 				B2D302F81D69F4B4008CA025 /* type.xcconfig in Resources */,
@@ -422,51 +492,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		3205D44BD19B3531C22A8682 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Type/Pods-Type-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		4BE5EFD3AC089952BCD379D2 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		4F76E9F348C859B3A240E5AF /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Type/Pods-Type-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		62CAA3E81D11A029118BB317 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -552,8 +577,15 @@
 				B26586151D691F3C00CCEF6D /* AppCoordinator.swift in Sources */,
 				B26586261D69255D00CCEF6D /* ViewControllerFactory.swift in Sources */,
 				B26586111D691E0400CCEF6D /* FlowCoordinator.swift in Sources */,
+				B217B7921D71DA270098C232 /* UnwindHandler.swift in Sources */,
+				B217B78D1D71D94F0098C232 /* NotesViewModel.swift in Sources */,
+				B217B7901D71D9C80098C232 /* NotesDisplayable.swift in Sources */,
+				B217B7941D71DAC30098C232 /* Injectable.swift in Sources */,
 				B26586231D6924D000CCEF6D /* NoteViewModel.swift in Sources */,
+				B217B7971D71DB8A0098C232 /* FlowCoordinatorDependencySet.swift in Sources */,
+				B2D303161D69FE8A008CA025 /* UIViewController+Keyboard.swift in Sources */,
 				B26585DE1D691CF500CCEF6D /* AppDelegate.swift in Sources */,
+				B217B78A1D71D9320098C232 /* NotesViewController.swift in Sources */,
 				B26586201D69249300CCEF6D /* NoteViewController.swift in Sources */,
 				B26586281D69C8D300CCEF6D /* NoteFlowCoordinator.swift in Sources */,
 				B265861B1D6923FC00CCEF6D /* TypeTextView.swift in Sources */,
@@ -592,6 +624,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		B217B7981D71DD280098C232 /* Notes.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B217B7991D71DD280098C232 /* Base */,
+			);
+			name = Notes.storyboard;
+			sourceTree = "<group>";
+		};
 		B26585E61D691CF500CCEF6D /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

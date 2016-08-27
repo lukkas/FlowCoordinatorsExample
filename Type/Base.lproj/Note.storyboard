@@ -54,11 +54,12 @@
                             <constraint firstAttribute="trailing" secondItem="Oqo-aU-MLA" secondAttribute="trailing" id="TdO-Yg-fYK"/>
                             <constraint firstItem="QGT-Xp-dVE" firstAttribute="top" secondItem="Oqo-aU-MLA" secondAttribute="bottom" id="ZOh-hg-EqB"/>
                             <constraint firstItem="ov6-Qf-Ddf" firstAttribute="leading" secondItem="ZKf-Zh-1ng" secondAttribute="leading" id="bqY-p4-25n"/>
-                            <constraint firstItem="ov6-Qf-Ddf" firstAttribute="top" secondItem="Cuv-zp-UzV" secondAttribute="bottom" constant="-20" id="lyI-8m-ObR"/>
+                            <constraint firstItem="ov6-Qf-Ddf" firstAttribute="top" secondItem="Cuv-zp-UzV" secondAttribute="bottom" id="lyI-8m-ObR"/>
                             <constraint firstItem="Oqo-aU-MLA" firstAttribute="top" secondItem="ov6-Qf-Ddf" secondAttribute="bottom" id="t59-rI-QpT"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="bottomConstraint" destination="ZOh-hg-EqB" id="tip-S6-Ri2"/>
                         <outlet property="collectionView" destination="Oqo-aU-MLA" id="Rv7-EX-cbh"/>
                         <outlet property="textView" destination="ov6-Qf-Ddf" id="ue5-66-JlC"/>
                     </connections>

@@ -11,6 +11,9 @@ import UIKit
 final class AppCoordinator: FlowCoordinator {
     
     let navigationController: UINavigationController
+    private var dependencySet: FlowCoordinatorDependencySet {
+        return FlowCoordinatorDependencySet()
+    }
     private var currentFlowCoordinator: FlowCoordinator?
     
     init(navigationController: UINavigationController) {

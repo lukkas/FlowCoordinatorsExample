@@ -21,10 +21,19 @@ final class NoteFlowCoordinator: FlowCoordinator {
     }
 }
 
+extension NoteFlowCoordinator: UnwindHandler {}
+
+extension NoteFlowCoordinator: Injectable {
+    
+    func injectDependencySet(set: FlowCoordinatorDependencySet) {
+        
+    }
+}
+
 private extension NoteFlowCoordinator {
     
     func showNoteViewController() {
-        let noteViewController = ViewControllerFactory.searchViewController()
+        let noteViewController = ViewControllerFactory.noteViewController()
         noteViewController.viewModel = NoteViewModel()
         noteViewController.flowCoordinator = self
         navigationController.show(noteViewController, sender: nil)

@@ -12,13 +12,18 @@ struct ViewControllerFactory {
     
     enum Storyboard: String {
         case Note
+        case Notes
     }
     
     private static func storyboard(_ stoyboard: Storyboard) -> UIStoryboard {
         return UIStoryboard(name: stoyboard.rawValue, bundle: nil)
     }
     
-    static func searchViewController() -> NoteViewController {
+    static func noteViewController() -> NoteViewController {
         return storyboard(.Note).instantiateViewController(withIdentifier: "NoteViewController") as! NoteViewController
+    }
+    
+    static func notesViewController() -> NotesViewController {
+        return storyboard(.Notes).instantiateViewController(withIdentifier: "NotesViewController") as! NotesViewController
     }
 }

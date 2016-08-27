@@ -15,11 +15,16 @@ final class NoteViewController: UIViewController {
     
     @IBOutlet weak var textView: TypeTextView!
     @IBOutlet weak var collectionView: UICollectionView!
+    @IBOutlet weak var bottomConstraint: NSLayoutConstraint!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         precondition(viewModel != nil)
         setup()
+    }
+    
+    deinit {
+        removeKeyboardNotificationListeners()
     }
 }
 
@@ -27,6 +32,8 @@ private extension NoteViewController {
     
     func setup() {
         setupCollectionView()
+        setupKeyboardNotifcationListenerForBottomLayoutGuideConstraint(constraint: bottomConstraint)
+        textView.becomeFirstResponder()
     }
     
     func setupCollectionView() {
